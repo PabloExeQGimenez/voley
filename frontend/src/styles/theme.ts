@@ -1,6 +1,7 @@
 export const theme = {
   colors: {
-
+    bg: 'gray',
+    text: 'black'
   },
   spacing: (n: number) => `${n * 8}px`,
   radius: {
