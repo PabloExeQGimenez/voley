@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: voley_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: voley
+      POSTGRES_PASSWORD: voley
+      POSTGRES_DB: voley_local
+    ports:
+      - '5432:5432'
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+volumes:
+  dbdata:
