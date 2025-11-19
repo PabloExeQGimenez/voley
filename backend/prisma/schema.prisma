@@ -14,8 +14,8 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Equipo {
-  id String @id @default(cuid())
+model Team {
+  id String @id @default(uuid())
   name String @unique
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
