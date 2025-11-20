@@ -21,7 +21,7 @@ export const teamsController = {
     }
   },
 
-  delete: async (req: Request, res: Response, next: NextFunction) => {
+  remove: async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { id } = req.params as { id: string };
       await teamsService.remove(id);
