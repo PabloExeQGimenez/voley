@@ -15,7 +15,7 @@ jobs:
         run: |
           pwd
           ls
-          echo "Contenido de backend:"
+          echo "Contenido backend:"
           ls backend
       - run: npm ci
       - run: npm run lint
