@@ -21,6 +21,14 @@ module.exports = [
     rules: {
       ...tseslint.configs.recommended.rules,
       ...prettier.rules,
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_', // ignora parámetros que empiezan con _
+          varsIgnorePattern: '^_', // ignora variables que empiezan con _
+          caughtErrorsIgnorePattern: '^_', // ignora errores capturados llamados _error, etc.
+        },
+      ],
     },
   },
 ];
