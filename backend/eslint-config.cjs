@@ -1,8 +1,10 @@
-import tseslint from '@typescript-eslint/eslint-plugin';
-import tsparser from '@typescript-eslint/parser';
-import prettier from 'eslint-config-prettier';
+// eslint.config.cjs — Config para ESLint v9 + TypeScript + Prettier (CommonJS)
 
-export default [
+const tseslint = require('@typescript-eslint/eslint-plugin');
+const tsparser = require('@typescript-eslint/parser');
+const prettier = require('eslint-config-prettier');
+
+module.exports = [
   {
     files: ['src/**/*.{ts,tsx}'],
 
