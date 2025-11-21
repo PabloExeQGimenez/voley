@@ -5,5 +5,5 @@ import { prisma } from './db/prisma.js';
 
 app.listen(ENV.PORT, async () => {
   await prisma.$queryRaw`SELECT 1`;
-  logger.info(`API running on http://localhost:${ENV.PORT}`);
+  logger.info(`API lista en: http://localhost:${ENV.PORT}`);
 });
